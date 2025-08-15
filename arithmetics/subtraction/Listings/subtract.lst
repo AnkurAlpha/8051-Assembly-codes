@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  SUBTRACT                                                             08/15/2025 18:55:44 PAGE     1
+A51 MACRO ASSEMBLER  SUBTRACT                                                             08/15/2025 19:07:37 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -9,11 +9,15 @@ ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE subtract.a51 SET(SMALL) DEBUG P
 LOC  OBJ            LINE     SOURCE
 
 0000                   1     ORG 0000H 
-0000 7412              2             MOV A , #12H
-0002 9401              3             SUBB A , #1H
-                       4             END
-                                             
-A51 MACRO ASSEMBLER  SUBTRACT                                                             08/15/2025 18:55:44 PAGE     2
+0000 C3                2             CLR C ; BETTER TO DO THIS BEFORE PERFORMING SUBTRACTION 
+0001 7412              3             MOV A , #12H
+0003 9401              4             SUBB A , #1H
+0005 F555              5             MOV 55H , A 
+0007 7420              6             MOV A , #20H
+0009 9415              7             SUBB A , #15H ; SUBTRCT HIGH BYTE WITH THE POSSIBLE BORROW 
+000B F556              8             MOV 56H , A 
+                       9             END
+A51 MACRO ASSEMBLER  SUBTRACT                                                             08/15/2025 19:07:37 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------

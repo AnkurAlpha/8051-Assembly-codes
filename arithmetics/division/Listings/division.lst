@@ -1,0 +1,39 @@
+A51 MACRO ASSEMBLER  DIVISION                                                             08/15/2025 19:29:49 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\division.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE division.a51 SET(SMALL) DEBUG PRINT(.\Listings\division.lst) OBJECT(.\O
+                      bjects\division.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H 
+0000 7444              2             MOV A , #44H 
+0002 75F011            3             MOV B , #11H 
+0005 84                4             DIV AB ;  DIVIDE A/B 
+0006 F555              5             MOV 55H , A ; A = QUOTIENT
+0008 85F056            6             MOV 56H , B ; B = REMAINDER 
+                       7             ; LET'S TRY AGIAN WITH THE NUMBERS WHICH CAN'T BE DIVIDED COMPLETELY AND WILL HAVE 
+                             A REMAINDER 
+000B 7412              8             MOV A , #12H 
+000D 75F005            9             MOV B, #05H 
+0010 84               10             DIV AB ; 
+0011 F558             11             MOV 58H , A 
+0013 85F059           12             MOV 59H  , B 
+                      13             END
+A51 MACRO ASSEMBLER  DIVISION                                                             08/15/2025 19:29:49 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

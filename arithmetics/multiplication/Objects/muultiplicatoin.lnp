@@ -1,0 +1,3 @@
+".\Objects\nultiply.obj" 
+TO ".\Objects\muultiplicatoin" 
+PRINT(".\Listings\muultiplicatoin.m51") RAMSIZE(256) 
