@@ -1,0 +1,3 @@
+".\Objects\addressing.obj" 
+TO ".\Objects\types of addresses" 
+PRINT(".\Listings\types of addresses.m51") RAMSIZE(256) 

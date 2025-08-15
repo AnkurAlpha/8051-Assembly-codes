@@ -1,0 +1,34 @@
+A51 MACRO ASSEMBLER  ADDRESSING                                                           08/15/2025 17:21:08 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\addressing.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE addressing.a51 SET(SMALL) DEBUG PRINT(.\Listings\addressing.lst) OBJECT
+                      (.\Objects\addressing.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H 
+0000 7412              2             MOV A , #12H  ; Immediate adressing 
+0002 E9                3             MOV A , R1 ; Register addressing 
+0003 F530              4             MOV 30H , A ; Direct adressing 
+0005 E6                5             MOV A , @R0 ; Register indire3ct addressing 
+0006 93                6             MOVC A , @A+DPTR ; Indexed addressing 
+                       7             ; OR 
+0007 83                8             MOVC A , @A+PC 
+                       9             END
+                                             
+A51 MACRO ASSEMBLER  ADDRESSING                                                           08/15/2025 17:21:08 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
