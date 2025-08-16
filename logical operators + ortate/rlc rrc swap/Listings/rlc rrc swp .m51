@@ -1,0 +1,55 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    08/16/2025  11:37:08  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\rlc rrc swap.obj TO .\Objects\rlc rrc swp  PRINT (.\Listings\rlc rrc swp .m51) RAM
+>> SIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\rlc rrc swap.obj (RLC_RRC_SWAP)
+
+
+LINK MAP OF MODULE:  .\Objects\rlc rrc swp  (RLC_RRC_SWAP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0019H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\rlc rrc swp  (RLC_RRC_SWAP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        RLC_RRC_SWAP
+  B:00D0H.7       SYMBOL        CY
+  C:0000H         LINE#         4
+  C:0002H         LINE#         5
+  C:0004H         LINE#         6
+  C:0005H         LINE#         7
+  C:0007H         LINE#         9
+  C:0009H         LINE#         10
+  C:000BH         LINE#         15
+  C:000DH         LINE#         16
+  C:000FH         LINE#         17
+  C:0010H         LINE#         18
+  C:0012H         LINE#         20
+  C:0014H         LINE#         21
+  C:0016H         LINE#         22
+  C:0017H         LINE#         23
+  -------         ENDMOD        RLC_RRC_SWAP
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0019H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=25
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

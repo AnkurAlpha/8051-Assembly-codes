@@ -1,0 +1,49 @@
+A51 MACRO ASSEMBLER  RLC_RRC_SWAP                                                         08/16/2025 11:37:06 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\rlc rrc swap.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE rlc rrc swap.a51 SET(SMALL) DEBUG PRINT(.\Listings\rlc rrc swap.lst) OB
+                      JECT(.\Objects\rlc rrc swap.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+                       2             ; A = 10010110b, CY=1 ; 96H
+                       3             ; RLC A ? A = 00101101b, CY=1 (from old bit7=1)
+0000 7496              4             MOV A , #96H
+0002 F555              5             MOV 55H , A 
+0004 33                6             RLC A 
+0005 F556              7             MOV 56H ,A 
+                       8             ; MOV 57H , CY
+0007 A2D7              9             MOV C, CY         ; not needed, CY is already in C
+0009 9200             10             MOV 20H.0, C      ; store CY into bit 0 of bit-addressable RAM (20H–2FH)
+                      11             
+                      12             ; A = 10010110b, CY=0
+                      13             ; RRC A ? A = 01001011b, CY=0 (from old bit0=0)
+                      14     
+000B 7496             15             MOV A , #96H 
+000D F555             16             MOV 55H , A 
+000F 13               17             RRC A 
+0010 F556             18             MOV 56H ,A 
+                      19             
+0012 7496             20             MOV A , #96H
+0014 F555             21             MOV 55H , A 
+0016 C4               22             SWAP A 
+0017 F556             23             MOV 56H , A 
+                      24             END
+A51 MACRO ASSEMBLER  RLC_RRC_SWAP                                                         08/16/2025 11:37:06 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+CY . . . . . . . .  B ADDR   00D0H.7 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

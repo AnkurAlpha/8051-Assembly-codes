@@ -1,0 +1,45 @@
+A51 MACRO ASSEMBLER  OR_AND_XOR                                                           08/15/2025 19:59:50 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\or and xor.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE or and xor.a51 SET(SMALL) DEBUG PRINT(.\Listings\or and xor.lst) OBJECT
+                      (.\Objects\or and xor.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H 
+0000 7455              2             MOV A , #55H
+0002 5401              3             ANL A , #01H 
+0004 F555              4             MOV 55H , A 
+0006 7455              5             MOV A , #55H
+0008 4401              6             ORL A , #01H 
+000A F556              7             MOV 56H , A 
+000C 7455              8             MOV A , #55H 
+000E 6401              9             XRL A , #01H 
+0010 F557             10             MOV 57H , A 
+                      11             ; LETS AGIAN DO 
+0012 7455             12             MOV A , #55H
+0014 5422             13             ANL A , #22H 
+0016 F555             14             MOV 55H , A 
+0018 7455             15             MOV A , #55H
+001A 4422             16             ORL A , #22H 
+001C F556             17             MOV 56H , A 
+001E 7455             18             MOV A , #55H 
+0020 6422             19             XRL A , #22H 
+0022 F557             20             MOV 57H , A 
+                      21             END
+A51 MACRO ASSEMBLER  OR_AND_XOR                                                           08/15/2025 19:59:50 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

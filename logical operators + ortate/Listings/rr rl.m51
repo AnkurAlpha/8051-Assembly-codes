@@ -1,0 +1,47 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    08/15/2025  22:34:27  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\rr rl.obj TO .\Objects\rr rl PRINT (.\Listings\rr rl.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\rr rl.obj (RR_RL)
+
+
+LINK MAP OF MODULE:  .\Objects\rr rl (RR_RL)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000EH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\rr rl (RR_RL)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        RR_RL
+  C:0000H         LINE#         4
+  C:0002H         LINE#         5
+  C:0004H         LINE#         6
+  C:0005H         LINE#         7
+  C:0007H         LINE#         12
+  C:0009H         LINE#         13
+  C:000BH         LINE#         14
+  C:000CH         LINE#         15
+  -------         ENDMOD        RR_RL
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 000EH BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=14
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,3 @@
+".\Objects\or and xor.obj" 
+TO ".\Objects\or and xor " 
+PRINT(".\Listings\or and xor .m51") RAMSIZE(256) 

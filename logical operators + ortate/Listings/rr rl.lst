@@ -1,0 +1,40 @@
+A51 MACRO ASSEMBLER  RR_RL                                                                08/15/2025 22:34:25 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\rr rl.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE rr rl.a51 SET(SMALL) DEBUG PRINT(.\Listings\rr rl.lst) OBJECT(.\Objects
+                      \rr rl.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;A = 10010110b  ; 96h
+                       2     ;RL A ? 00101101b ; 2Dh
+0000                   3     ORG 0000H 
+0000 7496              4             MOV A , #96H
+0002 F555              5             MOV 55H , A 
+0004 23                6             RL A 
+0005 F556              7             MOV 56H , A 
+                       8     
+                       9     ;A = 10010110b  ; 96h
+                      10     ; RL A ? 00101101b ; 2Dh
+                      11     
+0007 7496             12     MOV A , #96H 
+0009 F555             13     MOV 55H , A
+000B 03               14     RR A 
+000C F556             15     MOV 56H , A 
+                      16     END
+A51 MACRO ASSEMBLER  RR_RL                                                                08/15/2025 22:34:25 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
