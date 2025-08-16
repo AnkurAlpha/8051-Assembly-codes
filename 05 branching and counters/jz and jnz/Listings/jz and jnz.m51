@@ -1,0 +1,49 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    08/16/2025  12:57:20  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\jz and jnz.obj TO .\Objects\jz and jnz PRINT (.\Listings\jz and jnz.m51) RAMSIZE (
+>> 256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\jz and jnz.obj (JZ_AND_JNZ)
+
+
+LINK MAP OF MODULE:  .\Objects\jz and jnz (JZ_AND_JNZ)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000DH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\jz and jnz (JZ_AND_JNZ)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        JZ_AND_JNZ
+  B:00D0H.7       SYMBOL        CY
+  C:0005H         SYMBOL        LOOP
+  C:0000H         LINE#         2
+  C:0001H         LINE#         3
+  C:0003H         LINE#         4
+  C:0005H         LINE#         5
+  C:0007H         LINE#         7
+  C:0009H         LINE#         8
+  C:000BH         LINE#         9
+  -------         ENDMOD        JZ_AND_JNZ
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 000DH BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=13
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

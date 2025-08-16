@@ -1,0 +1,36 @@
+A51 MACRO ASSEMBLER  JZ_AND_JNZ                                                           08/16/2025 12:57:19 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\jz and jnz.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE jz and jnz.a51 SET(SMALL) DEBUG PRINT(.\Listings\jz and jnz.lst) OBJECT
+                      (.\Objects\jz and jnz.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H 
+0000 E4                2             CLR A 
+0001 C2D7              3             CLR CY 
+0003 7910              4             MOV R1 , #10H 
+0005 3405              5             LOOP: ADDC A , #05H
+                       6             ; JUST FOR MONITORING CONVINENCE 
+0007 F555              7             MOV 55H, A 
+0009 8956              8             MOV 56H , R1 
+000B D9F8              9             DJNZ R1 , LOOP 
+                      10             END
+A51 MACRO ASSEMBLER  JZ_AND_JNZ                                                           08/16/2025 12:57:19 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+CY . . . . . . . .  B ADDR   00D0H.7 A   
+LOOP . . . . . . .  C ADDR   0005H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

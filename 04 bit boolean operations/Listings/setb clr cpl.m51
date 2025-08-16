@@ -1,0 +1,61 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    08/16/2025  12:36:44  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\setb clr cpl.obj TO .\Objects\setb clr cpl PRINT (.\Listings\setb clr cpl.m51) RAM
+>> SIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\setb clr cpl.obj (SETB_CLR_CPL)
+
+
+LINK MAP OF MODULE:  .\Objects\setb clr cpl (SETB_CLR_CPL)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0021H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\setb clr cpl (SETB_CLR_CPL)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SETB_CLR_CPL
+  C:0017H         SYMBOL        OMG
+  D:0090H         SYMBOL        P1
+  D:00A0H         SYMBOL        P2
+  D:00B0H         SYMBOL        P3
+  C:0015H         SYMBOL        SEE
+  C:0009H         SYMBOL        TARGET
+  C:0005H         SYMBOL        THIS
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0005H         LINE#         4
+  C:0007H         LINE#         5
+  C:0009H         LINE#         6
+  C:000BH         LINE#         7
+  C:000EH         LINE#         9
+  C:0010H         LINE#         10
+  C:0012H         LINE#         11
+  C:0015H         LINE#         12
+  C:0017H         LINE#         13
+  C:0019H         LINE#         14
+  C:001CH         LINE#         15
+  C:001EH         LINE#         16
+  -------         ENDMOD        SETB_CLR_CPL
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0021H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=33
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

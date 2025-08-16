@@ -1,0 +1,49 @@
+A51 MACRO ASSEMBLER  SETB_CLR_CPL                                                         08/16/2025 12:36:43 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\setb clr cpl.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE setb clr cpl.a51 SET(SMALL) DEBUG PRINT(.\Listings\setb clr cpl.lst) OB
+                      JECT(.\Objects\setb clr cpl.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 D292              2             SETB P1.2 ; SET PORT 1 PIN 2 = 1 (TURN IT ON , MAYBE SOME LED OR MOTOOR OR SOMETHIN
+                             G WILL BE THERE ) 
+0002 20B304            3             JB P3.3 , TARGET ; JUMP IF BIT ( P3,3 ) = 1-> MOVE TO TARGET
+0005 C292              4             THIS: CLR P1.2 ; IF NOT JUMP CLEAR  P1.2
+0007 D2B3              5             SETB P3.3 ; 
+0009 C2B3              6             TARGET:  CLR P3.3
+000B 2092F7            7             JB P1.2 , THIS 
+                       8             
+000E 7410              9             MOV A , #10H
+0010 C2A1             10             CLR P2.1 
+0012 30A102           11             JNB P2.1 , OMG
+0015 2410             12             SEE: ADD A , #10H
+0017 B2A1             13             OMG: CPL P2.1 
+0019 20A1F9           14             JB P2.1 , SEE 
+001C F555             15             MOV 55H , A
+001E 10A1F4           16             JBC P2.1 , SEE
+                      17             END 
+A51 MACRO ASSEMBLER  SETB_CLR_CPL                                                         08/16/2025 12:36:43 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+OMG. . . . . . . .  C ADDR   0017H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+SEE. . . . . . . .  C ADDR   0015H   A   
+TARGET . . . . . .  C ADDR   0009H   A   
+THIS . . . . . . .  C ADDR   0005H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
